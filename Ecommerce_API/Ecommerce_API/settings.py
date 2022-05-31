@@ -77,12 +77,13 @@ WSGI_APPLICATION = 'Ecommerce_API.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'HOST' : 'localhost',
+        'HOST' : '127.0.0.1',
         'PORT' : '3306',
-        'USER': 'Daniel',
+        'USER': 'root',
+        # 'PASSWORD': '123456',
         'NAME' : 'django_api',
         'OPTIONS' : {
-            'init command' : "SET sql_mode='STRICT_TRANS_TABLES'"
+            'init_command' : "SET sql_mode='STRICT_TRANS_TABLES'"
         }
     }
 }
